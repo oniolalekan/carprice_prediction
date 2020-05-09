@@ -4,7 +4,7 @@ This is a Django Rest Framework service to help predict price of car given some 
 The service is based on a prediction model trained using data and a kernel from a Kaggle challenge. <a href="https://www.kaggle.com/goyalshalini93/car-price-prediction-linear-regression-rfe"> Kaggle Challenge</a>
 
 
-The service is deployed on heroku: http://carpricepredict.herokuapp.com/
+The service is deployed on heroku: <a href="http://carpricepredict.herokuapp.com/"> Car Price Prediction </a>
 
 The end point exposed: https://carpricepredict.herokuapp.com/predict
 

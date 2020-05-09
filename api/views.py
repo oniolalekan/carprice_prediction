@@ -36,20 +36,13 @@ def predict_carprice(request):
             highend = int(str(highend))
 
             result = [1.0, horsepower,carwidth, hatchback, highend]
-            #Passing data to model & loading the model from disks
-
             
 
-            data_folder = Path("/carprice_api/carprice_deploy/")
-
-            file_to_open = data_folder / "model.pkl"
-
-            print(file_to_open)
-
-            #path = "c:\\Users\\CBT532\\carprice_api\\carprice_deploy\\api\\model.pkl"
+            current_path = os.path.dirname(__file__)
+            model_folder = os.path.join(current_path, "model.pkl")
 
             
-            regressor = pickle.load(open(file_to_open, 'rb'))
+            regressor = pickle.load(open(model_folder, 'rb'))
             prediction = regressor.predict([result])[0]
 
             # Min-Max Scaler. Scale up the car price by using the Min-Max scaling algorithm that was used in training.

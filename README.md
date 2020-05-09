@@ -8,7 +8,7 @@ The service is deployed on heroku: <a href="http://carpricepredict.herokuapp.com
 
 The end point exposed: https://carpricepredict.herokuapp.com/predict
 
-List of significant variables after Visual analysis: horsepower, carwidth, hatchback, and highend
+List of significant variables after Visual analysis of the data: horsepower, carwidth, hatchback, and highend
 
 Sample api call: https://carpricepredict.herokuapp.com/predict?horsepower=154&carwidth=65.50&ishatchback=0&ishighend=0
 

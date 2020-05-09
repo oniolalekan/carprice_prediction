@@ -1,0 +1,13 @@
+Django==2.2.7
+djangorestframework==3.8.2
+gunicorn==20.0.4
+numpy==1.18.1
+pandas==1.0.1
+pathlib==1.0.1
+patsy==0.5.1
+python-dateutil==2.8.1
+pytz==2020.1
+scipy==1.4.1
+six==1.14.0
+sqlparse==0.3.1
+statsmodels==0.11.1

@@ -5,10 +5,11 @@ The service is based on a prediction model trained using data and a kernel from 
 
 The aim was to construct a model that can predict the price of car (the dependent attribute) from the attribute variables (the independent attributes) like car {horsepower, width, company name, fuel type, engine size, cylinder number, etc.}. This is a classical example of a regression problem where the objective is to predict a continuous value - the price of a car. 
 
-From the Exploratory Data Analysis, it was discovered that most of the collected independent variables had no effect on the price of the car. In other words, there was little or no correlation between the variables and the price of car. Consequently, those variables were dropped. However, carwidth, horsepower .... to have significant positive correlation with price.   
+New features were derived from existing ones. One worthy of mention is "Car Range" - a categorical data. This feature was derived by binning the Car Companies based on avg prices of each Company to give three features: Budget, Medium, and Highend.
 
-New features were also derived from existing ones. One worthy of mention is "Car Range" - a categorical data. This feature was derived by binning the Car Companies based on avg prices of each Company to give three features: Budget, Medium, and Highend.  
+Dummy variables were created by coding the categorical data. For example, Car Range was coded into two nominal variables of Medium and Highend.  
 
+From the Exploratory Data Analysis, it was discovered that most of the collected independent variables had no effect on the price of the car. In other words, there was little or no correlation between the variables and the price of car. Consequently, those variables were dropped. However, carwidth, horsepower, hatchback and highend were found to have significant positive correlation with price.    
 
 The service is deployed on heroku: <a href="http://carpricepredict.herokuapp.com/"> Car Price Prediction </a>
 

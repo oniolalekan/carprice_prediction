@@ -1,7 +1,13 @@
 # Car Price Prediction Service
 
-This is a Django Rest Framework service to help predict price of car given some core dependent variables.
+This is a Django Rest Framework service to help predict price of car given some core dependent variables. 
 The service is based on a prediction model trained using data and a kernel from a Kaggle challenge. <a href="https://www.kaggle.com/goyalshalini93/car-price-prediction-linear-regression-rfe"> Kaggle Challenge</a>
+
+The aim was to construct a model that can predict the price of car (the dependent attribute) from the attribute variables (the independent attributes) like car {horsepower, width, company name, fuel type, engine size, cylinder number, etc.}. This is a classical example of a regression problem where the objective is to predict a continuous value - the price of a car. 
+
+From the Exploratory Data Analysis, it was discovered that most of the collected independent variables had no effect on the price of the car. In other words, there was little or no correlation between the variables and the price of car. Consequently, those variables were dropped. However, carwidth, horsepower .... to have significant positive correlation with price.   
+
+New features were also derived from existing ones. One worthy of mention is "Car Range" - a categorical data. This feature was derived by binning the Car Companies based on avg prices of each Company to give three features: Budget, Medium, and Highend.  
 
 
 The service is deployed on heroku: <a href="http://carpricepredict.herokuapp.com/"> Car Price Prediction </a>

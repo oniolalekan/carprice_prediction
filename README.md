@@ -9,7 +9,7 @@ New features were derived from existing ones. One worthy of mention is "Car Rang
 
 Dummy variables were created by coding the categorical data. For example, Car Range was coded into two nominal variables of Medium and Highend.  
 
-From the Exploratory Data Analysis, it was discovered that most of the collected independent variables had no effect on the price of the car. In other words, there was little or no correlation between the variables and the price of car. Consequently, those variables were dropped. However, carwidth, horsepower, hatchback and highend were found to have significant positive correlation with price.    
+From the Exploratory Data Analysis, it was discovered that most of the collected independent variables had little or no effect on the price of the car. In other words, there was little or no correlation between the variables and the price of car. Consequently, those variables were dropped. However, carwidth, horsepower, hatchback and highend were found to have significant positive correlation with price.    
 
 The service is deployed on heroku: <a href="http://carpricepredict.herokuapp.com/"> Car Price Prediction </a>
 

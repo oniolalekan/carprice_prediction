@@ -13,10 +13,6 @@ From the Exploratory Data Analysis, it was discovered that most of the collected
 
 Ordinary least squares (OLS) regression method of analysis was used to estimates the relationship between the indenpedent variables and the dependent variable - the price of car. The model was saved on disk and deployed as a RESTFUL service. 
 
-<figure>
-  Ordinary least squares (OLS)
-</figure>
-
 The service is deployed on heroku: <a href="http://carpricepredict.herokuapp.com/"> Car Price Prediction </a>
 
 The end point exposed: https://carpricepredict.herokuapp.com/predict
